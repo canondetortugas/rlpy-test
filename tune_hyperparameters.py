@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 from rlpy.Tools.hypersearch import find_hyperparameters
 
 best, trials = find_hyperparameters("./rbfs.py",
