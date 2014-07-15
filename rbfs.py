@@ -36,7 +36,7 @@ def make_experiment(
     representation = RBF(domain, num_rbfs=int(num_rbfs),
                          resolution_max=resolution, resolution_min=resolution,
                          const_feature=False, normalize=True, seed=exp_id)
-    policy = eGreedy(representation, epsilon=0.1)
+    policy = eGreedy(representation, epsilon=0.3)
     opt["agent"] = Q_LEARNING(
         policy, representation, discount_factor=domain.discount_factor,
         lambda_=lambda_, initial_learn_rate=initial_learn_rate,
