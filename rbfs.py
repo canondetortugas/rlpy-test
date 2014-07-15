@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 """
 Cart-pole balancing with independent discretization
 """
@@ -20,11 +22,11 @@ param_space = {
 
 
 def make_experiment(
-        exp_id=1, path="./Results/Temp/{domain}/{agent}/{representation}/",
-        boyan_N0=2120,
-        initial_learn_rate=.26,
-        lambda_=0.9,
-        resolution=6, num_rbfs=100):
+        exp_id=1, path="./{domain}/{agent}/{representation}/",
+        boyan_N0=9792.88,
+        initial_learn_rate=.07066,
+        lambda_=0.087,
+        resolution=6.0, num_rbfs=24.0):
     opt = {}
     opt["exp_id"] = exp_id
     opt["max_steps"] = 30000
